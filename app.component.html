@@ -1,0 +1,21 @@
+<h1>custom pipe example</h1>
+<table border="1">
+    <tr >
+       <th>Id</th>
+       <th>NAME</th>
+       <th>EMAIL</th>
+    </tr>
+    <tr *ngFor="let arrays of arrays">
+        <td>{{arrays.id}}</td>
+        <td>{{arrays.name}}</td>
+        <td>{{arrays.email}}</td>
+    </tr>
+    <tr>
+        <td colspan="3"> ****** with pipe exaple ******</td>  </tr>
+    <tr *ngFor="let arrays of arrays">
+        <td>{{arrays.id}}</td>
+        <td>{{arrays.name|neelpipe:arrays.name}}</td>
+        <td>{{arrays.email}}</td>
+     
+    </tr>
+</table>
