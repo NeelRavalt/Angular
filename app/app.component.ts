@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  title:any = 'practice-2';   // we can use this as property
-  name:any = 'neel'
+  title = 'practice-2';
+  
+
 }
