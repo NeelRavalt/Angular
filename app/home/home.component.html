@@ -1,0 +1,34 @@
+
+<div class="container mt-5">
+    <h1>Angular Http POST request example</h1>
+  
+    <div class="card">
+      <div class="card-body">
+     
+        <form [formGroup]= "addUserForm" (ngSubmit)="saveUser()">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Title" formControlName="title">
+            </div>
+            <div class="form-group">
+              <label for="id">ID</label>
+              <input type="number" class="form-control" id="id" placeholder="ID" formControlName="id">
+            </div>
+            <button [disabled]="!addUserForm.valid" class="btn btn-primary" type="submit">Add User</button>
+          </form>
+          
+      </div>
+    </div>
+  
+    <div class="card mt-3">
+      <div class="card-body">
+        <h2>List of Users</h2>
+        <ng-container *ngFor="let user of users">
+          {{ user.id }} - {{ user.user_id }}<br>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  
+
+
