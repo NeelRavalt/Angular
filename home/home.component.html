@@ -1,0 +1,86 @@
+<div class="container mt-5">
+  <h1>Angular Http POST request example</h1>
+
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="addUserForm" (ngSubmit)="saveUser()">
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input
+            type="number"
+            class="form-control"
+            id="id"
+            formControlName="id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            formControlName="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">emial</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            formControlName="email"
+          />
+        </div>
+
+        <button
+          [disabled]="!addUserForm.valid"
+          class="btn btn-primary"
+          type="submit"
+        >
+          Add User
+        </button>
+      </form>
+    </div>
+  </div>
+  <h1>This data come from personal json</h1>
+  <table border="2" class="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userData">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>This data comes from json server</h2>
+  <table border="2" class="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <div class="card mt-3">
+      <div class="card-body">
+        <h2>List of Users</h2>
+        <ng-container *ngFor="let user of users">
+          {{ user.id }} - {{ user.user_id }}<br>
+        </ng-container>
+      </div>
+    </div>
+  </div> -->
+</div>
