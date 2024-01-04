@@ -107,8 +107,8 @@ export class HomeComponent {
 
   saveUser() {
     //by use of swapping we can store data in to array.
-    const tempArray = this.userData;
-    tempArray.push(this.addUserForm.value);
+    const tempArray = this.userData;            //save dummy json data in to this variable
+    tempArray.push(this.addUserForm.value);    // also share formgroup values in to this variable
     this.userData = tempArray;
 
     this.userService.saveUser(this.user).subscribe((response: any) => {
