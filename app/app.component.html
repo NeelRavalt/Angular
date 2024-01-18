@@ -1,2 +1,11 @@
+<!-- <<<<<<< Event-binding -->
 <button (click)="clicks()">click me</button>
 <button (click)="getdata()">getdata</button>
+<!-- ======= -->
+<div>
+    <a [routerLink]='["/home"]'>home</a><br>
+    <a [routerLink]='["/footer"]'>footer</a><br>
+    <a [routerLink]='["/header"]'>header</a>
+    <router-outlet></router-outlet>
+</div>
+<!-- >>>>>>> main -->
