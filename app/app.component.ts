@@ -8,10 +8,14 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
+// <<<<<<< Event-binding
 
   clicks(){console.log('you cliked button')}
    
   getdata(){
     alert('sorry data is not available')
   }
+=======
+  title = 'practice-2';
+// >>>>>>> main
 }
