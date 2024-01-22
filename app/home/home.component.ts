@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../user.service';
 
@@ -7,6 +8,7 @@ import { UserService } from '../user.service';
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+
   inputs: ['child', 'values'],
 })
 
@@ -39,4 +41,11 @@ export class HomeComponent {
     );
   }
   
+
+  inputs:['child','values'],
+})
+export class HomeComponent {
+child:any
+values:any
+
 }
