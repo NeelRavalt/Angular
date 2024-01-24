@@ -1,5 +1,12 @@
 
+<!-- <<<<<<< Event-binding -->
+
+<button (click)="clicks()">click me</button>
+<button (click)="getdata()">getdata</button>
+
+
 <router-outlet></router-outlet>
+
 
 <!--  3-parent-to-child-child-to-parent-data-transfer -->
 <h1><label for="emial"> This is Parent component:<input type="email" name="email" id="email" #event (keyup)="0"> </label></h1>
@@ -13,5 +20,9 @@
     <a [routerLink]='["/header"]'>header</a>
     <router-outlet></router-outlet>
 </div>
+
+
+
 main
+
 
