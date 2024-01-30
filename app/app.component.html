@@ -1,4 +1,17 @@
 
+<!-- <<<<<<< Two-way-binding -->
+
+ <input type="text" [(ngModel)]="name">
+ {{name}}
+
+<div class="divs">
+<h2 [innerHTML]="title"></h2> 
+<h3 [innerHTML]="name"></h3>
+<img [src]="'https://th.bing.com/th/id/OIP.Ca8m7_pPKZlmP5bgC7UfCgHaH0?rs=1&pid=ImgDetMain'"[width]="200" [height]="200"  alt="">
+</div>
+
+
+
 <!-- <<<<<<< Event-binding -->
 
 <button (click)="clicks()">click me</button>
@@ -6,6 +19,7 @@
 
 
 <router-outlet></router-outlet>
+
 
 
 <!--  3-parent-to-child-child-to-parent-data-transfer -->
@@ -21,8 +35,5 @@
     <router-outlet></router-outlet>
 </div>
 
-
-
-main
 
 

@@ -10,6 +10,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
+  title = 'practice-2';
+  name:string = 'neel nilay'
+  
+
+
+  title:any = 'practice-2';   // we can use this as property
+  name:any = 'neel'
+
+
+  title = 'practice-2';
+
+
   clicks(){console.log('you cliked button')}
    
   getdata(){
@@ -18,9 +30,6 @@ export class AppComponent {
 
   title = 'practice-2';
 
-
-
-  
 
 }
 

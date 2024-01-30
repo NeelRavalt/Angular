@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
+// <<<<<<< Two-way-binding
+import { FormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
-3-parent-to-child-child-to-parent-data-transfer
+
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,13 +26,15 @@ import { Child1Component } from './child1/child1.component';
 @NgModule({
   declarations: [
     AppComponent,
-// <<<<<<< 3-parent-to-child-child-to-parent-data-transfer
     HomeComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    FormsModule
+
     AppRoutingModule
-// =======
+
     HomeComponent,
     NeelpipePipe,
     FooterComponent,
@@ -35,7 +45,6 @@ import { Child1Component } from './child1/child1.component';
     BrowserModule,
     AppRoutingModule,
    
-// >>>>>>> main
   ],
   providers: [],
   bootstrap: [AppComponent]
