@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-// <<<<<<< Two-way-binding
+
 
   title = 'practice-2';
   name:string = 'neel nilay'
@@ -18,7 +18,20 @@ export class AppComponent {
   title:any = 'practice-2';   // we can use this as property
   name:any = 'neel'
 
-// =======
+
   title = 'practice-2';
-// >>>>>>> main
+
+
+  clicks(){console.log('you cliked button')}
+   
+  getdata(){
+    alert('sorry data is not available')
+  }
+
+  title = 'practice-2';
+
+
 }
+
+}
+
